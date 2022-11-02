@@ -6,58 +6,91 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillGithub,
+  AiFillHtml5,
+  AiOutlineAntDesign,
 } from "react-icons/ai";
-// import { FiArrowRight } from "react-icons/fi";
-
+import { DiCss3Full } from "react-icons/di";
+import { FaReact, FaGitAlt, FaSass } from "react-icons/fa";
+import { SiRedux, SiTailwindcss, SiJavascript } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import { ArrowRight } from "iconsax-react";
-
-import web1 from "../assets/images/web1.png";
-import web2 from "../assets/images/web2.png";
-import web3 from "../assets/images/web3.png";
-import web4 from "../assets/images/web4.png";
 import alien from "../assets/images/alien.png";
-
 import { useState } from "react";
 
 const data = [
   {
-    name: "KodeEvents",
-    url: "www.google.com",
+    name: "OHyphen",
+    url: "https://stocks-app-frontend-gvbsum9t5-zeroandone.vercel.app/auth/register",
     description:
-      "A web app to help you foster meaningful relationships with your community through events. Get people registered for your events without any hassle",
-    tools: ["React", "Redux", "Nextjs", "JavaScript", "CSS", "Tailwind"],
-  },
-
-  {
-    name: "ChatApp",
-    url: "www.google.com",
-    description:
-      "A web app to help you foster meaningful relationships with your community through events. Get people registered for your events without any hassle",
-    tools: ["React", "Redux", "Nextjs", "JavaScript", "CSS", "Tailwind"],
-  },
-
-  {
-    name: "Find me",
-    url: "www.google.com",
-    description:
-      "A web app to help you foster meaningful relationships with your community through events. Get people registered for your events without any hassle",
-    tools: ["React", "Redux", "Nextjs", "JavaScript", "CSS", "Tailwind"],
-  },
-
-  {
-    name: "AVENIR",
-    url: "www.google.com",
-    description:
-      "A web app to help you foster meaningful relationships with your community through events. Get people registered for your events without any hassle",
-    tools: ["React", "Redux", "Nextjs", "JavaScript", "CSS", "Tailwind"],
+      "This is a product that I have been working on with a team of designers, frontend, and backend developers at my recent company. Specifically, I worked on the UI of the register page, otp, verification, and login page as well as integrating them to the backend to successfully collect data from the frontend.",
+    tools: ["Nextjs", "Redux", "CSS", "Ant Design"],
   },
 
   {
     name: "Monster Rolodex",
-    url: "www.google.com",
+    url: "https://cool-bubblegum-714092.netlify.app/",
     description:
-      "A web app to help you foster meaningful relationships with your community through events. Get people registered for your events without any hassle",
-    tools: ["React", "Redux", "Nextjs", "JavaScript", "CSS", "Tailwind"],
+      "This is a really small app that implements the search functionality of the cards fetched from an API endpoint.",
+    tools: ["React", "SCSS"],
+  },
+
+  {
+    name: "Plateau State Open Government Partnership",
+    url: "https://opengovapp.herokuapp.com/",
+    description:
+      "This is a simple landing page that I was asked to build during my internship at nhub Nigeria to show what I had learnt in React",
+    tools: ["React", "CSS", "JavaScript"],
+  },
+
+  {
+    name: "AVENIR",
+    url: "https://olafisoyevince.github.io/AVENIR/",
+    description:
+      "This is a very simple landing page that I worked on personally just to practice what I had learnt. I made use of React, React Router for easy navigation through the page. I was still a little bit inexperienced with React when I made this site, so the images are not optimized for performance purposes.",
+    tools: ["React", "CSS"],
+  },
+];
+
+const skills = [
+  {
+    logo: <AiFillHtml5 className=" text-4xl" />,
+    title: "HTML",
+  },
+  {
+    logo: <DiCss3Full className=" text-4xl" />,
+    title: "CSS",
+  },
+  {
+    logo: <FaSass className=" text-4xl" />,
+    title: "SASS",
+  },
+  {
+    logo: <SiJavascript className=" text-4xl" />,
+    title: "Javascript",
+  },
+  {
+    logo: <FaReact className=" text-4xl" />,
+    title: "React",
+  },
+  {
+    logo: <TbBrandNextjs className=" text-4xl" />,
+    title: "Nextjs",
+  },
+  {
+    logo: <SiRedux className=" text-4xl" />,
+    title: "Redux",
+  },
+  {
+    logo: <FaGitAlt className=" text-4xl" />,
+    title: "Git",
+  },
+  {
+    logo: <SiTailwindcss className=" text-4xl" />,
+    title: "Tailwind",
+  },
+  {
+    logo: <AiOutlineAntDesign className=" text-4xl" />,
+    title: "Ant Design",
   },
 ];
 
@@ -67,7 +100,7 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>Seun Olafisoye</title>
+        <title>seun_dev</title>
         <meta name="description" content="seun_dev" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -96,7 +129,9 @@ export default function Home() {
               <li>
                 <a
                   className=" bg-gray-800 dark:bg-stone-200 dark:text-gray-800 text-stone-200 px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  href="https://drive.google.com/file/d/108GjmUdTGvKEmMDaXOnos65FaxY0lsdY/view?usp=share_link"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Resume
                 </a>
@@ -116,17 +151,17 @@ export default function Home() {
               animations.
             </p>
             <div className="text-2xl flex justify-center gap-4 text-gray-700 dark:text-stone-200 md:justify-start">
-              <Link href="#">
+              <Link href="https://twitter.com/fisoyeseun_">
                 <a>
                   <AiFillTwitterCircle />
                 </a>
               </Link>
-              <Link href="#">
+              <Link href="https://www.linkedin.com/in/seun-olafisoye-58223b167/">
                 <a>
                   <AiFillLinkedin />
                 </a>
               </Link>
-              <Link href="#">
+              <Link href="https://github.com/olafisoyevince">
                 <a>
                   <AiFillGithub />
                 </a>
@@ -140,11 +175,13 @@ export default function Home() {
         <section>
           <div className="md:flex mb-10">
             <div>
-              <h3 className="w-56 text-3xl py-1 md:pr-10">Background</h3>
+              <h3 className="w-56 text-3xl py-1 md:pr-10 text-gray-800 dark:text-stone-200">
+                Background
+              </h3>
             </div>
-            <div className="md:mr-48">
+            <div className="md:mr-8 lg:mr-48">
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200 tracking-wide">
-                I currently work as a Frontend Engineer Intern at Zero & One
+                I currently work as a Frontend Engineer at Zero & One
                 Technologies.
               </p>
 
@@ -163,12 +200,39 @@ export default function Home() {
                 broaden my expertise in frontend engineering.
               </p>
 
-              <Link href="#">
-                <a className="flex items-center font-bold ">
-                  View my Resume
-                  <ArrowRight size="18" className="ml-2" />
-                </a>
-              </Link>
+              <a
+                href="https://drive.google.com/file/d/108GjmUdTGvKEmMDaXOnos65FaxY0lsdY/view?usp=share_link"
+                className="flex items-center font-bold text-gray-800 dark:text-stone-200 "
+                target="_blank"
+                rel="noreferrer"
+              >
+                View my Resume
+                <ArrowRight
+                  size="18"
+                  className="ml-2 text-gray-800 dark:text-stone-200"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="md:flex  mb-10">
+            <div>
+              <h3 className="w-56 text-3xl py-1 md:pr-10 text-gray-800 dark:text-stone-200">
+                Skills
+              </h3>
+            </div>
+            <div className=" flex gap-6 flex-wrap mt-4 text-gray-800 dark:text-stone-200 md:mr-8 lg:mr-48">
+              {skills.map((data, i) => {
+                const { logo, title } = data;
+                return (
+                  <div className="" key={i}>
+                    {logo}
+                    <p>{title}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -176,18 +240,29 @@ export default function Home() {
         <section>
           <div className="md:flex">
             <div>
-              <h3 className="w-56 text-3xl py-1 md:pr-10">Projects</h3>
+              <h3 className="w-56 text-3xl py-1 md:pr-10 text-gray-800 dark:text-stone-200">
+                Projects
+              </h3>
             </div>
 
-            <div className=" mt-4 pb-44">
+            <div className="text-gray-800 dark:text-stone-200 mt-4 pb-4">
               {data.map((item, i) => {
-                const { name, description, tools } = item;
+                const { name, description, tools, url } = item;
                 return (
-                  <div key={i} className="mb-14 md:mr-48">
-                    <div className="flex items-center pb-3">
-                      <p className=" font-bold">{name}</p>
+                  <div key={i} className="mb-14 md:mr-8 lg:mr-48">
+                    <div>
+                      <Link href={url}>
+                        <a className="flex items-center pb-3">
+                          <p className=" font-bold text-gray-800 dark:text-stone-200">
+                            {name}
+                          </p>
 
-                      <ArrowRight size="18" className="ml-2" />
+                          <ArrowRight
+                            size="18"
+                            className=" text-gray-800 dark:text-stone-200 ml-2"
+                          />
+                        </a>
+                      </Link>
                     </div>
 
                     <p className="pb-3">{description}</p>
@@ -197,7 +272,7 @@ export default function Home() {
                         return (
                           <p
                             key={i}
-                            className=" border-2 border-gray-800 px-1 rounded"
+                            className=" border-2 border-gray-800 dark:border-stone-200 px-1 rounded"
                           >
                             {tool}
                           </p>
@@ -209,6 +284,12 @@ export default function Home() {
               })}
             </div>
           </div>
+        </section>
+
+        <section>
+          <p className="text-center pb-4 text-gray-800 dark:text-stone-200">
+            Developed by Seun Olafisoye
+          </p>
         </section>
       </main>
     </div>
