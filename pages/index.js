@@ -22,7 +22,7 @@ const data = [
     name: "OHyphen",
     url: "https://stocks-app-frontend-gvbsum9t5-zeroandone.vercel.app/auth/register",
     description:
-      "This is a product that I have been working on with a team of designers, frontend, and backend developers at my recent company. Specifically, I worked on the UI of the register page, otp, verification, and login page as well as integrating them to the backend to successfully collect data from the frontend.",
+      "This is a product that I have been working on with a team of designers, frontend, and backend developers at my recent company. Specifically, I worked on the UI of the register page, OTP verification, and login the page as well as integrating them to the backend to successfully collect data from the users.",
     tools: ["Nextjs", "Redux", "CSS", "Ant Design"],
   },
 
@@ -140,10 +140,10 @@ export default function Home() {
           </nav>
 
           <div className="text-center p-10 md:text-left ">
-            <h2 className="text-4xl py-2 text-gray-800 dark:text-stone-200 tracking-wide">
+            <h2 className="text-4xl md:text-7xl py-2 text-gray-800 dark:text-stone-200 tracking-wide">
               Seun Olafisoye
             </h2>
-            <h3 className="text-2xl text-gray-800 dark:text-stone-200 font-medium tracking-wide">
+            <h3 className="text-2xl md:text-3xl text-gray-800 dark:text-stone-200 font-medium tracking-wide">
               Frontend Engineer
             </h3>
             <p className=" mx-auto py-4 leading-8 text-gray-800 md:mx-0 md:w-80 dark:text-stone-200 tracking-wide">
@@ -176,28 +176,25 @@ export default function Home() {
           <div className="md:flex mb-10">
             <div>
               <h3 className="w-56 text-3xl py-1 md:pr-10 text-gray-800 dark:text-stone-200">
-                Background
+                About Me
               </h3>
             </div>
             <div className="md:mr-8 lg:mr-48">
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200 tracking-wide">
+              {/* <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200 tracking-wide">
                 I currently work as a Frontend Engineer at Zero & One
                 Technologies.
-              </p>
+              </p> */}
 
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200 tracking-wide">
-                I enjoy bridging the gap between engineering and design in my
-                role as a frontend engineer by fusing my technical expertise
+                In my position as a frontend engineer, I like to bridge the gap
+                between engineering and design by fusing my technical expertise
                 with my strong sense of aesthetics to produce stunning products.
-                My objective is to constantly create scalable, effective
-                programs that offer captivating, pixel-perfect user interfaces.
+                My objective is to constantly create scalable, effective wed
+                apps that offer captivating, pixel-perfect user interfaces.
               </p>
 
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200 tracking-wide">
-                I also recently received my Bachelor of Engineering in
-                Electrical & Electronics Engineering from Bells University of
-                Technology. And I&apos;m still seeking for ways to develop and
-                broaden my expertise in frontend engineering.
+                In my spare time, I moatly listen to music and watch anime.
               </p>
 
               <a
@@ -223,12 +220,12 @@ export default function Home() {
                 Skills
               </h3>
             </div>
-            <div className=" flex gap-6 flex-wrap mt-4 text-gray-800 dark:text-stone-200 md:mr-8 lg:mr-48">
+            <div className=" flex gap-9 flex-wrap mt-4 text-gray-800 dark:text-stone-200 md:mr-8 lg:mr-48">
               {skills.map((data, i) => {
                 const { logo, title } = data;
                 return (
-                  <div className="" key={i}>
-                    {logo}
+                  <div className=" flex flex-col items-center" key={i}>
+                    <div>{logo}</div>
                     <p>{title}</p>
                   </div>
                 );
