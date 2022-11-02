@@ -146,7 +146,7 @@ export default function Home() {
             <h3 className="text-2xl text-gray-800 dark:text-stone-200 font-medium tracking-wide">
               Frontend Engineer
             </h3>
-            <p className=" w-80 mx-auto py-4 leading-8 text-gray-800 md:mx-0 dark:text-stone-200 tracking-wide">
+            <p className=" mx-auto py-4 leading-8 text-gray-800 md:mx-0 dark:text-stone-200 tracking-wide">
               I love building user interfaces and playing around with
               animations.
             </p>
