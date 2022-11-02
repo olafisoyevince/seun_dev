@@ -194,7 +194,7 @@ export default function Home() {
               </p>
 
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200 tracking-wide">
-                In my spare time, I moatly listen to music and watch anime.
+                In my spare time, I mostly listen to music and watch anime.
               </p>
 
               <a
