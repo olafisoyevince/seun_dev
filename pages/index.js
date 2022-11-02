@@ -140,7 +140,7 @@ export default function Home() {
           </nav>
 
           <div className="text-center p-10 md:text-left ">
-            <h2 className="text-7xl py-2 text-gray-800 dark:text-stone-200 tracking-wide">
+            <h2 className="text-4xl py-2 text-gray-800 dark:text-stone-200 tracking-wide">
               Seun Olafisoye
             </h2>
             <h3 className="text-2xl text-gray-800 dark:text-stone-200 font-medium tracking-wide">
