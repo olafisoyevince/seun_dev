@@ -19,6 +19,48 @@ import alien from "../assets/images/alien.png";
 
 import { useState } from "react";
 
+const data = [
+  {
+    name: "KodeEvents",
+    url: "www.google.com",
+    description:
+      "A web app to help you foster meaningful relationships with your community through events. Get people registered for your events without any hassle",
+    tools: ["React", "Redux", "Nextjs", "JavaScript", "CSS", "Tailwind"],
+  },
+
+  {
+    name: "ChatApp",
+    url: "www.google.com",
+    description:
+      "A web app to help you foster meaningful relationships with your community through events. Get people registered for your events without any hassle",
+    tools: ["React", "Redux", "Nextjs", "JavaScript", "CSS", "Tailwind"],
+  },
+
+  {
+    name: "Find me",
+    url: "www.google.com",
+    description:
+      "A web app to help you foster meaningful relationships with your community through events. Get people registered for your events without any hassle",
+    tools: ["React", "Redux", "Nextjs", "JavaScript", "CSS", "Tailwind"],
+  },
+
+  {
+    name: "AVENIR",
+    url: "www.google.com",
+    description:
+      "A web app to help you foster meaningful relationships with your community through events. Get people registered for your events without any hassle",
+    tools: ["React", "Redux", "Nextjs", "JavaScript", "CSS", "Tailwind"],
+  },
+
+  {
+    name: "Monster Rolodex",
+    url: "www.google.com",
+    description:
+      "A web app to help you foster meaningful relationships with your community through events. Get people registered for your events without any hassle",
+    tools: ["React", "Redux", "Nextjs", "JavaScript", "CSS", "Tailwind"],
+  },
+];
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -63,13 +105,13 @@ export default function Home() {
           </nav>
 
           <div className="text-center p-10 md:text-left ">
-            <h2 className="text-5xl py-2 text-gray-800 font-medium dark:text-stone-200">
+            <h2 className="text-7xl py-2 text-gray-800 dark:text-stone-200 tracking-wide">
               Seun Olafisoye
             </h2>
-            <h3 className="text-2xl text-gray-800 dark:text-stone-200">
+            <h3 className="text-2xl text-gray-800 dark:text-stone-200 font-medium tracking-wide">
               Frontend Engineer
             </h3>
-            <p className=" w-80 mx-auto py-4 leading-8 text-gray-800 md:mx-0 dark:text-stone-200">
+            <p className=" w-80 mx-auto py-4 leading-8 text-gray-800 md:mx-0 dark:text-stone-200 tracking-wide">
               I love building user interfaces and playing around with
               animations.
             </p>
@@ -100,13 +142,13 @@ export default function Home() {
             <div>
               <h3 className="w-56 text-3xl py-1 md:pr-10">Background</h3>
             </div>
-            <div>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200">
+            <div className="md:mr-48">
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200 tracking-wide">
                 I currently work as a Frontend Engineer Intern at Zero & One
                 Technologies.
               </p>
 
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200">
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200 tracking-wide">
                 I enjoy bridging the gap between engineering and design in my
                 role as a frontend engineer by fusing my technical expertise
                 with my strong sense of aesthetics to produce stunning products.
@@ -114,7 +156,7 @@ export default function Home() {
                 programs that offer captivating, pixel-perfect user interfaces.
               </p>
 
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200">
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200 tracking-wide">
                 I also recently received my Bachelor of Engineering in
                 Electrical & Electronics Engineering from Bells University of
                 Technology. And I&apos;m still seeking for ways to develop and
@@ -122,7 +164,7 @@ export default function Home() {
               </p>
 
               <Link href="#">
-                <a className="flex items-center ">
+                <a className="flex items-center font-bold ">
                   View my Resume
                   <ArrowRight size="18" className="ml-2" />
                 </a>
@@ -137,59 +179,34 @@ export default function Home() {
               <h3 className="w-56 text-3xl py-1 md:pr-10">Projects</h3>
             </div>
 
-            <div>
-              <div className=" pb-44">
-                <div className="flex items-center pb-3">
-                  <p>KodeEvents</p>
+            <div className=" mt-4 pb-44">
+              {data.map((item, i) => {
+                const { name, description, tools } = item;
+                return (
+                  <div key={i} className="mb-14 md:mr-48">
+                    <div className="flex items-center pb-3">
+                      <p className=" font-bold">{name}</p>
 
-                  <ArrowRight size="18" className="ml-2" />
-                </div>
+                      <ArrowRight size="18" className="ml-2" />
+                    </div>
 
-                <p className="pb-3">
-                  A web app to help you foster meaningful relationships with
-                  your community through events. Get people registered for your
-                  events without any hassle
-                </p>
+                    <p className="pb-3">{description}</p>
 
-                <div className="flex gap-3">
-                  <p className=" border-2 border-gray-800 px-1 rounded">
-                    React
-                  </p>
-                  <p className=" border-2 border-gray-800 px-1 rounded">
-                    React
-                  </p>
-                  <p className=" border-2 border-gray-800 px-1 rounded">
-                    React
-                  </p>
-                  <p className=" border-2 border-gray-800 px-1 rounded">
-                    React
-                  </p>
-                  <p className=" border-2 border-gray-800 px-1 rounded">
-                    React
-                  </p>
-                </div>
-              </div>
-
-              {/* <div>
-                <Image
-                  src={web2}
-                  alt={"a picture of a project that I didn't do"}
-                />
-              </div>
-
-              <div>
-                <Image
-                  src={web3}
-                  alt={"a picture of a project that I didn't do"}
-                />
-              </div>
-
-              <div>
-                <Image
-                  src={web4}
-                  alt={"a picture of a project that I didn't do"}
-                />
-              </div> */}
+                    <div className="flex gap-3 flex-wrap">
+                      {tools.map((tool, i) => {
+                        return (
+                          <p
+                            key={i}
+                            className=" border-2 border-gray-800 px-1 rounded"
+                          >
+                            {tool}
+                          </p>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
