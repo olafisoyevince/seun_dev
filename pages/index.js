@@ -38,7 +38,7 @@ const data = [
     name: "Plateau State Open Government Partnership",
     url: "https://opengovapp.herokuapp.com/",
     description:
-      "This is a simple landing page that I was asked to build during my internship at nhub Nigeria to show what I had learnt in React",
+      "This is a simple landing page that I was asked to build during my internship at nhub Nigeria that was used to pitch for a contact for the firm.",
     tools: ["React", "CSS", "JavaScript"],
   },
 
