@@ -31,6 +31,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-family: ClashDisplayRegular;
 }
 
 a {
@@ -40,5 +41,4 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: ClashDisplayRegular;
 }

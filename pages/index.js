@@ -19,36 +19,36 @@ import { useState } from "react";
 
 const data = [
   {
-    name: "OHyphen",
-    url: "https://stocks-app-frontend-gvbsum9t5-zeroandone.vercel.app/auth/register",
+    name: "Collate Africa",
+    url: "https://www.collate.africa",
     description:
-      "This is a product that I have been working on with a team of designers, frontend, and backend developers at my recent company. Specifically, I worked on the UI of the register page, OTP verification, and login the page as well as integrating them to the backend to successfully collect data from the users.",
-    tools: ["Nextjs", "Redux", "CSS", "Ant Design"],
+      "A service that allows Nigerians to upload election results from their polling units and share it with other people.",
+    tools: ["Nextjs", "ChakraUI", "React Query"],
   },
 
-  {
-    name: "Monster Rolodex",
-    url: "https://cool-bubblegum-714092.netlify.app/",
-    description:
-      "This is a really small app that implements the search functionality of the cards fetched from an API endpoint.",
-    tools: ["React", "SCSS"],
-  },
+  // {
+  //   name: "Monster Rolodex",
+  //   url: "https://cool-bubblegum-714092.netlify.app/",
+  //   description:
+  //     "This is a really small app that implements the search functionality of the cards fetched from an API endpoint.",
+  //   tools: ["React", "SCSS"],
+  // },
 
-  {
-    name: "Plateau State Open Government Partnership",
-    url: "https://opengovapp.herokuapp.com/",
-    description:
-      "This is a simple landing page that I was asked to build during my internship at nhub Nigeria that was used to pitch for a contact for the firm.",
-    tools: ["React", "CSS", "JavaScript"],
-  },
+  // {
+  //   name: "Plateau State Open Government Partnership",
+  //   url: "https://opengovapp.herokuapp.com/",
+  //   description:
+  //     "This is a simple landing page that I was asked to build during my internship at nhub Nigeria that was used to pitch for a contact for the firm.",
+  //   tools: ["React", "CSS", "JavaScript"],
+  // },
 
-  {
-    name: "AVENIR",
-    url: "https://olafisoyevince.github.io/AVENIR/",
-    description:
-      "This is a very simple landing page that I worked on personally just to practice what I had learnt. I made use of React, React Router for easy navigation through the page. I was still a little bit inexperienced with React when I made this site, so the images are not optimized for performance purposes.",
-    tools: ["React", "CSS"],
-  },
+  // {
+  //   name: "AVENIR",
+  //   url: "https://olafisoyevince.github.io/AVENIR/",
+  //   description:
+  //     "This is a very simple landing page that I worked on personally just to practice what I had learnt. I made use of React, React Router for easy navigation through the page. I was still a little bit inexperienced with React when I made this site, so the images are not optimized for performance purposes.",
+  //   tools: ["React", "CSS"],
+  // },
 ];
 
 const skills = [
@@ -105,14 +105,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" bg-stone-200 px-10 md:px-20 lg:px-30 xl:px-60 2xl:px-60 dark:bg-gray-800 dark:text-stone-200">
+      <main className=" bg-stone-200 px-5 md:px-20 lg:px-30 xl:px-60 2xl:px-60 dark:bg-gray-800 dark:text-stone-200">
         <section className="min-h-screen dark:text-stone-200">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl text-gray-800 dark:text-stone-200">
               <div className=" flex align-middle gap-2 ">
                 <Image
                   src={alien}
-                  alt={"a picture of a project that I didn't do"}
+                  alt={"an alien in form of an icon"}
                   height={"20px"}
                   width={"25px"}
                 />
@@ -128,8 +128,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className=" bg-gray-800 dark:bg-stone-200 dark:text-gray-800 text-stone-200 px-4 py-2 rounded-md ml-8"
-                  href="https://drive.google.com/file/d/108GjmUdTGvKEmMDaXOnos65FaxY0lsdY/view?usp=share_link"
+                  className=" bg-gray-800 dark:bg-stone-200 dark:text-gray-800 text-stone-200 px-4 py-2 rounded-md ml-3 md:ml-8"
+                  href="https://drive.google.com/file/d/1W7ZQbviwfIeSJ8gm7dBA5ByWyIcDy6Iv/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -141,22 +141,22 @@ export default function Home() {
 
           <div className="text-center p-10 md:text-left ">
             <h2 className="text-4xl md:text-7xl py-2 text-gray-800 dark:text-stone-200 tracking-wide">
-              Seun Olafisoye
+              Oluwaseun Olafisoye
             </h2>
             <h3 className="text-2xl md:text-3xl text-gray-800 dark:text-stone-200 font-medium tracking-wide">
               Frontend Engineer
             </h3>
-            <p className=" mx-auto py-4 leading-8 text-gray-800 md:mx-0 md:w-80 dark:text-stone-200 tracking-wide">
+            {/* <p className=" mx-auto py-4 leading-8 text-gray-800 md:mx-0 md:w-80 dark:text-stone-200 tracking-wide">
               I love building user interfaces and playing around with
               animations.
-            </p>
-            <div className="text-2xl flex justify-center gap-4 text-gray-700 dark:text-stone-200 md:justify-start">
+            </p> */}
+            <div className="text-2xl flex justify-center gap-4 text-gray-700 dark:text-stone-200 md:justify-start pt-5">
               <Link href="https://twitter.com/fisoyeseun_">
                 <a>
                   <AiFillTwitterCircle />
                 </a>
               </Link>
-              <Link href="https://www.linkedin.com/in/seun-olafisoye-58223b167/">
+              <Link href="https://www.linkedin.com/in/oluwaseun-olafisoye-58223b167/">
                 <a>
                   <AiFillLinkedin />
                 </a>
