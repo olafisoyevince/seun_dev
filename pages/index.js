@@ -129,7 +129,7 @@ export default function Home() {
               <li>
                 <a
                   className=" bg-gray-800 dark:bg-stone-200 dark:text-gray-800 text-stone-200 px-4 py-2 rounded-md ml-3 md:ml-8"
-                  href="https://drive.google.com/file/d/1W7ZQbviwfIeSJ8gm7dBA5ByWyIcDy6Iv/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1W7ZQbviwfIeSJ8gm7dBA5ByWyIcDy6Iv/view?usp=share_link"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -198,7 +198,7 @@ export default function Home() {
               </p>
 
               <a
-                href="https://drive.google.com/file/d/108GjmUdTGvKEmMDaXOnos65FaxY0lsdY/view?usp=share_link"
+                href="https://drive.google.com/file/d/1W7ZQbviwfIeSJ8gm7dBA5ByWyIcDy6Iv/view?usp=share_link"
                 className="flex items-center font-bold text-gray-800 dark:text-stone-200 "
                 target="_blank"
                 rel="noreferrer"
@@ -284,7 +284,7 @@ export default function Home() {
         </section>
 
         <section>
-          <p className="text-center pb-4 text-gray-800 dark:text-stone-200">
+          <p className="text-center pb-4 pt-6  text-gray-800 dark:text-stone-200">
             Developed by Seun Olafisoye
           </p>
         </section>
