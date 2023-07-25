@@ -254,11 +254,8 @@ export default function Home() {
               {data.map((item, i) => {
                 const { name, description, tools, url } = item;
                 return (
-                  <Link href={url}>
-                    <div
-                      key={i}
-                      className="mb-14 md:mr-8 lg:mr-48 cursor-pointer"
-                    >
+                  <Link key={i} href={url}>
+                    <div className="mb-14 md:mr-8 lg:mr-48 cursor-pointer">
                       <div>
                         <a className="flex items-center pb-3 justify-between">
                           <p className=" font-bold text-gray-800 dark:text-stone-200">
