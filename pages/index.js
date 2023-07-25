@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { FiLink2 } from "react-icons/fi";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -19,20 +20,27 @@ import { useState } from "react";
 
 const data = [
   {
+    name: "Ozone Pro Financial",
+    url: "https://www.ozoneprofinancials.com/",
+    description:
+      "Spearheaded the building of the frontend of the website, integrating the backend API endpoints with the frontend and implementing the UI design for the landing pages, login pages. ",
+    tools: ["Nextjs", "ChakraUI", "React Query"],
+  },
+  {
     name: "Collate Africa",
     url: "https://www.collate.africa",
     description:
-      "A service that allows Nigerians to upload election results from their polling units and share it with other people.",
+      "Collate.Africa was a groundbreaking project aimed at empowering Nigerian citizens to actively participate in the electoral process by providing a seamless platform for submitting and accessing election results during the last conducted elections. ",
     tools: ["Nextjs", "ChakraUI", "React Query"],
   },
 
-  // {
-  //   name: "Monster Rolodex",
-  //   url: "https://cool-bubblegum-714092.netlify.app/",
-  //   description:
-  //     "This is a really small app that implements the search functionality of the cards fetched from an API endpoint.",
-  //   tools: ["React", "SCSS"],
-  // },
+  {
+    name: "Monster Rolodex",
+    url: "https://cool-bubblegum-714092.netlify.app/",
+    description:
+      "Monster Rolodex is a lightweight web application designed to efficiently retrieve and display a list of monsters from the backend system. I focused on creating a streamlined user interface and implementing seamless communication between the frontend and backend through API requests.",
+    tools: ["React", "SCSS"],
+  },
 
   // {
   //   name: "Plateau State Open Government Partnership",
@@ -129,7 +137,7 @@ export default function Home() {
               <li>
                 <a
                   className=" bg-gray-800 dark:bg-stone-200 dark:text-gray-800 text-stone-200 px-4 py-2 rounded-md ml-3 md:ml-8"
-                  href="https://drive.google.com/file/d/1W7ZQbviwfIeSJ8gm7dBA5ByWyIcDy6Iv/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1LazuQLQjs96UzEX0DYPyhk3YPPQS_Z9L/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -198,7 +206,7 @@ export default function Home() {
               </p>
 
               <a
-                href="https://drive.google.com/file/d/1W7ZQbviwfIeSJ8gm7dBA5ByWyIcDy6Iv/view?usp=share_link"
+                href="https://drive.google.com/file/d/1LazuQLQjs96UzEX0DYPyhk3YPPQS_Z9L/view?usp=sharing"
                 className="flex items-center font-bold text-gray-800 dark:text-stone-200 "
                 target="_blank"
                 rel="noreferrer"
@@ -246,37 +254,51 @@ export default function Home() {
               {data.map((item, i) => {
                 const { name, description, tools, url } = item;
                 return (
-                  <div key={i} className="mb-14 md:mr-8 lg:mr-48">
-                    <div>
-                      <Link href={url}>
-                        <a className="flex items-center pb-3">
+                  <Link href={url}>
+                    <div
+                      key={i}
+                      className="mb-14 md:mr-8 lg:mr-48 cursor-pointer"
+                    >
+                      <div>
+                        <a className="flex items-center pb-3 justify-between">
                           <p className=" font-bold text-gray-800 dark:text-stone-200">
                             {name}
                           </p>
 
-                          <ArrowRight
+                          {/* <ArrowRight
                             size="18"
                             className=" text-gray-800 dark:text-stone-200 ml-2"
-                          />
+                          /> */}
+
+                          <div className=" flex h-full align-middle">
+                            <p className=" text-sm font-bold text-gray-800 dark:text-stone-200">
+                              Live
+                            </p>
+
+                            <FiLink2
+                              size="18"
+                              className=" text-gray-800 mt-0.5 flex align-middle dark:text-stone-200 ml-2"
+                            />
+                          </div>
                         </a>
-                      </Link>
-                    </div>
+                      </div>
 
-                    <p className="pb-3">{description}</p>
+                      <p className="pb-3">{description}</p>
 
-                    <div className="flex gap-3 flex-wrap">
-                      {tools.map((tool, i) => {
-                        return (
-                          <p
-                            key={i}
-                            className=" border-2 border-gray-800 dark:border-stone-200 px-1 rounded"
-                          >
-                            {tool}
-                          </p>
-                        );
-                      })}
+                      <div className="flex gap-3 flex-wrap">
+                        {tools.map((tool, i) => {
+                          return (
+                            <p
+                              key={i}
+                              className=" border-2 border-gray-800 dark:border-stone-200 px-1 rounded"
+                            >
+                              {tool}
+                            </p>
+                          );
+                        })}
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 );
               })}
             </div>
