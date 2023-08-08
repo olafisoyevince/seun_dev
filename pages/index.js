@@ -32,7 +32,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="  h-[70vh] p-12  bg-gradient-to-r from-[#aeeeb2] to-[#94bbe9] rounded-2xl">
+        {/* <div className="  h-[70vh] p-12  bg-gradient-to-r from-[#aeeeb2] to-[#94bbe9] rounded-2xl">
           <h1 className=" text-7xl font-medium text-left mt-14">
             Creating Boundless <br /> Visual fantasies
           </h1>
@@ -45,7 +45,7 @@ export default function Home() {
           <button className=" bg-amber-200 px-10 py-3 rounded-full mt-8">
             Resumé
           </button>
-        </div>
+        </div> */}
       </section>
     </>
   );
