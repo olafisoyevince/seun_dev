@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Sun1 } from "iconsax-react";
 
 export default function Home() {
   return (
@@ -17,19 +18,20 @@ export default function Home() {
         <div className=" pt-8 pb-12 flex justify-between items-center">
           <h1 className="text-md">seun_dev</h1>
 
-          <div className=" px-10 py-3 rounded-full border ">
-            Available for work
-          </div>
+          <ul className=" flex items-center gap-14">
+            <li>About</li>
 
-          <div className=" flex items-center gap-8">
-            <ul>Projects</ul>
+            <li>Works</li>
 
-            <ul>About</ul>
+            <li>Contact</li>
+          </ul>
 
-            <button className=" bg-[#aeeeb2] px-10 py-3 rounded-full">
-              Contact me
-            </button>
-          </div>
+          <button>
+            <div className=" flex items-center gap-2">
+              <Sun1 size="20" />
+              Light
+            </div>
+          </button>
         </div>
 
         {/* <div className="  h-[70vh] p-12  bg-gradient-to-r from-[#aeeeb2] to-[#94bbe9] rounded-2xl">
