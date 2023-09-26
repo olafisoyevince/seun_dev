@@ -197,7 +197,7 @@ export default function Home() {
                 In my position as a frontend engineer, I like to bridge the gap
                 between engineering and design by fusing my technical expertise
                 with my strong sense of aesthetics to produce stunning products.
-                My objective is to constantly create scalable, effective wed
+                My objective is to constantly create scalable, effective web
                 apps that offer captivating, pixel-perfect user interfaces.
               </p>
 
