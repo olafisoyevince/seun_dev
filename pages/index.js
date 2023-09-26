@@ -130,7 +130,7 @@ export default function Home() {
               <li>
                 <a
                   className=" bg-gray-800 dark:bg-stone-200 dark:text-gray-800 text-stone-200 px-4 py-2 rounded-md ml-3 md:ml-8"
-                  href="https://drive.google.com/file/d/1LazuQLQjs96UzEX0DYPyhk3YPPQS_Z9L/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1VnqGJieSMaFuGgxipEeoH8e5tQJWY_Fe/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -190,7 +190,7 @@ export default function Home() {
               </p>
 
               <a
-                href="https://drive.google.com/file/d/1LazuQLQjs96UzEX0DYPyhk3YPPQS_Z9L/view?usp=sharing"
+                href="https://drive.google.com/file/d/1VnqGJieSMaFuGgxipEeoH8e5tQJWY_Fe/view?usp=sharing"
                 className="flex items-center font-bold text-gray-800 dark:text-stone-200 "
                 target="_blank"
                 rel="noreferrer"
