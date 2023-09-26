@@ -21,7 +21,7 @@ import { useState } from "react";
 const data = [
   {
     name: "Ozone Pro Financial",
-    url: "https://www.ozoneprofinancial.com/",
+    url: "https://ozoneprofinancial.com/",
     description:
       "Spearheaded the building of the frontend of the website, integrating the backend API endpoints with the frontend and implementing the UI design for the landing pages, login pages. ",
     tools: ["Nextjs", "ChakraUI", "React Query"],
