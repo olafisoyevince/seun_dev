@@ -10,7 +10,6 @@ let tl = gsap.timeline({
     scrub: 1,
     start: "top 40%",
     end: "bottom 40%",
-    // markers: true,
     pin: true,
   },
 });
