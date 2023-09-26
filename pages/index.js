@@ -31,7 +31,7 @@ const data = [
     name: "Collate Africa",
     url: "https://www.collate.africa",
     description:
-      "Collate.Africa was a groundbreaking project aimed at empowering Nigerian citizens to actively participate in the electoral process by providing a seamless platform for submitting and accessing election results during the last conducted elections. ",
+      "Collate Africa is a groundbreaking project aimed at empowering Nigerian citizens to actively participate in the electoral process by providing a seamless platform for submitting and accessing election results during the last conducted elections. ",
     tools: ["Nextjs", "ChakraUI", "React Query"],
   },
 
@@ -39,7 +39,7 @@ const data = [
     name: "Ozone Pro Financial",
     url: "https://ozoneprofinancial.com/",
     description:
-      "Spearheaded the building of the frontend of the website, integrating the backend API endpoints with the frontend and implementing the UI design for the landing pages, login pages. ",
+      "Led the development of the website's frontend, seamlessly integrating backend API endpoints with a focus on crafting the UI design for both the landing and login pages.",
     tools: ["Nextjs", "ChakraUI", "React Query"],
   },
 
@@ -50,22 +50,6 @@ const data = [
       "Monster Rolodex is a lightweight web application designed to efficiently retrieve and display a list of monsters from the backend system. I focused on creating a streamlined user interface and implementing seamless communication between the frontend and backend through API requests.",
     tools: ["React", "SCSS"],
   },
-
-  // {
-  //   name: "Plateau State Open Government Partnership",
-  //   url: "https://opengovapp.herokuapp.com/",
-  //   description:
-  //     "This is a simple landing page that I was asked to build during my internship at nhub Nigeria that was used to pitch for a contact for the firm.",
-  //   tools: ["React", "CSS", "JavaScript"],
-  // },
-
-  // {
-  //   name: "AVENIR",
-  //   url: "https://olafisoyevince.github.io/AVENIR/",
-  //   description:
-  //     "This is a very simple landing page that I worked on personally just to practice what I had learnt. I made use of React, React Router for easy navigation through the page. I was still a little bit inexperienced with React when I made this site, so the images are not optimized for performance purposes.",
-  //   tools: ["React", "CSS"],
-  // },
 ];
 
 const skills = [
@@ -163,10 +147,6 @@ export default function Home() {
             <h3 className="text-2xl md:text-3xl text-gray-800 dark:text-stone-200 font-medium tracking-wide">
               Frontend Engineer
             </h3>
-            {/* <p className=" mx-auto py-4 leading-8 text-gray-800 md:mx-0 md:w-80 dark:text-stone-200 tracking-wide">
-              I love building user interfaces and playing around with
-              animations.
-            </p> */}
             <div className="text-2xl flex justify-center gap-4 text-gray-700 dark:text-stone-200 md:justify-start pt-5">
               <Link href="https://twitter.com/fisoyeseun_">
                 <a>
@@ -197,11 +177,6 @@ export default function Home() {
               </h3>
             </div>
             <div className="md:mr-8 lg:mr-48">
-              {/* <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200 tracking-wide">
-                I currently work as a Frontend Engineer at Zero & One
-                Technologies.
-              </p> */}
-
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-stone-200 tracking-wide">
                 In my position as a frontend engineer, I like to bridge the gap
                 between engineering and design by fusing my technical expertise
@@ -271,12 +246,6 @@ export default function Home() {
                             <p className=" font-bold text-gray-800 dark:text-stone-200">
                               {name}
                             </p>
-
-                            {/* <ArrowRight
-                            size="18"
-                            className=" text-gray-800 dark:text-stone-200 ml-2"
-                          /> */}
-
                             <div className=" flex h-full align-middle">
                               <p className=" text-sm font-bold text-gray-800 dark:text-stone-200">
                                 Live
@@ -315,7 +284,7 @@ export default function Home() {
 
         <section>
           <p className="text-center pb-4 pt-6  text-gray-800 dark:text-stone-200">
-            Developed by Seun Olafisoye
+            Made with ❤️ by Oluwaseun Olafisoye
           </p>
         </section>
       </main>
