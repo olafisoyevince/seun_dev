@@ -20,17 +20,26 @@ import { useState } from "react";
 
 const data = [
   {
-    name: "Ozone Pro Financial",
-    url: "https://ozoneprofinancial.com/",
+    name: "Moriel's Oasis Foods",
+    url: "https://www.morielsoasis.ca/",
     description:
-      "Spearheaded the building of the frontend of the website, integrating the backend API endpoints with the frontend and implementing the UI design for the landing pages, login pages. ",
-    tools: ["Nextjs", "ChakraUI", "React Query"],
+      "One-stop-shop for African food products in Canada and the US, solving the problem of inaccessibility of these products and providing customers with an exciting and convenient shopping experience",
+    tools: ["Nextjs", "ChakraUI", "React Query", "Tailwind CSS"],
   },
+
   {
     name: "Collate Africa",
     url: "https://www.collate.africa",
     description:
       "Collate.Africa was a groundbreaking project aimed at empowering Nigerian citizens to actively participate in the electoral process by providing a seamless platform for submitting and accessing election results during the last conducted elections. ",
+    tools: ["Nextjs", "ChakraUI", "React Query"],
+  },
+
+  {
+    name: "Ozone Pro Financial",
+    url: "https://ozoneprofinancial.com/",
+    description:
+      "Spearheaded the building of the frontend of the website, integrating the backend API endpoints with the frontend and implementing the UI design for the landing pages, login pages. ",
     tools: ["Nextjs", "ChakraUI", "React Query"],
   },
 
@@ -254,47 +263,49 @@ export default function Home() {
               {data.map((item, i) => {
                 const { name, description, tools, url } = item;
                 return (
-                  <Link key={i} href={url}>
-                    <div className="mb-14 md:mr-8 lg:mr-48 cursor-pointer">
-                      <div>
-                        <a className="flex items-center pb-3 justify-between">
-                          <p className=" font-bold text-gray-800 dark:text-stone-200">
-                            {name}
-                          </p>
+                  <Link key={i} href={url} passHref>
+                    <a target="_blank" rel="noopener noreferrer">
+                      <div className="mb-14 md:mr-8 lg:mr-48 cursor-pointer">
+                        <div>
+                          <a className="flex items-center pb-3 justify-between">
+                            <p className=" font-bold text-gray-800 dark:text-stone-200">
+                              {name}
+                            </p>
 
-                          {/* <ArrowRight
+                            {/* <ArrowRight
                             size="18"
                             className=" text-gray-800 dark:text-stone-200 ml-2"
                           /> */}
 
-                          <div className=" flex h-full align-middle">
-                            <p className=" text-sm font-bold text-gray-800 dark:text-stone-200">
-                              Live
-                            </p>
+                            <div className=" flex h-full align-middle">
+                              <p className=" text-sm font-bold text-gray-800 dark:text-stone-200">
+                                Live
+                              </p>
 
-                            <FiLink2
-                              size="18"
-                              className=" text-gray-800 mt-0.5 flex align-middle dark:text-stone-200 ml-2"
-                            />
-                          </div>
-                        </a>
+                              <FiLink2
+                                size="18"
+                                className=" text-gray-800 mt-0.5 flex align-middle dark:text-stone-200 ml-2"
+                              />
+                            </div>
+                          </a>
+                        </div>
+
+                        <p className="pb-3">{description}</p>
+
+                        <div className="flex gap-3 flex-wrap">
+                          {tools.map((tool, i) => {
+                            return (
+                              <p
+                                key={i}
+                                className=" border-2 border-gray-800 dark:border-stone-200 px-1 rounded"
+                              >
+                                {tool}
+                              </p>
+                            );
+                          })}
+                        </div>
                       </div>
-
-                      <p className="pb-3">{description}</p>
-
-                      <div className="flex gap-3 flex-wrap">
-                        {tools.map((tool, i) => {
-                          return (
-                            <p
-                              key={i}
-                              className=" border-2 border-gray-800 dark:border-stone-200 px-1 rounded"
-                            >
-                              {tool}
-                            </p>
-                          );
-                        })}
-                      </div>
-                    </div>
+                    </a>
                   </Link>
                 );
               })}
